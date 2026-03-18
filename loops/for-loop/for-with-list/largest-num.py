@@ -1,10 +1,16 @@
 list1=[10,20,30,40,50]
 
-x=list1[0]
+largest=list1[0]
+second=list1[0]
 
 for i in list1:
-    if i>x:
-        x=i 
+    if i > largest:
+        second = largest
+        largest=i 
+    elif i > second and i != largest:
+        second = i
         
-print(x)
+print(largest)
+print(second)
+
          
